@@ -1,0 +1,40 @@
+event: message
+id: [{
+	"topic":"eqiad.mediawiki.recentchange",
+	"partition":0,
+	"timestamp":1682845185001
+	},
+	{"topic":"codfw.mediawiki.recentchange",
+	"partition":0,
+	"offset":-1}
+]
+data: {
+	"$schema":"/mediawiki/recentchange/1.0.0",
+	"meta":{
+		"uri":"https://www.wikidata.org/wiki/Q61670680",
+		"request_id":"d835a708-a36c-4fb1-931d-a7d312ce6756",
+		"id":"f7a76656-6b29-4ff8-ac28-79678d7290cb",
+		"dt":"2023-04-30T08:59:45Z",
+		"domain":"www.wikidata.org",
+		"stream":"mediawiki.recentchange",
+		"topic":"eqiad.mediawiki.recentchange",
+		"partition":0,"offset":4580840349
+		},
+	"id":1943239549,
+	"type":"edit",
+	"namespace":0,
+	"title":"Q61670680",
+	"comment":"/* wbcreateclaim-create:1| */ [[Property:P1813]]: A. korotneffi, [[:toollabs:quickstatements/#/batch/178297|batch #178297]]",
+	"timestamp":1682845185,
+	"user":"Research Bot",
+	"bot":false,
+	"minor":false,
+	"patrolled":true,
+	"length":{"old":10319,"new":10726},
+	"revision":{"old":1823211433,"new":1885604517},
+	"server_url":"https://www.wikidata.org",
+	"server_name":"www.wikidata.org",
+	"server_script_path":"/w",
+	"wiki":"wikidatawiki",
+	"parsedcomment":"‎<span dir=\"auto\"><span class=\"autocomment\">Created claim: </span></span> <a href=\"/wiki/Property:P1813\" title=\"Property:P1813\">Property:P1813</a>: A. korotneffi, <a href=\"https://iw.toolforge.org/quickstatements/#.2Fbatch.2F178297\" class=\"extiw\" title=\"toollabs:quickstatements/\">batch #178297</a>"
+	}
