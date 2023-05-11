@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: kafka-client
+  name: kafka-client
+spec:
+  tolerations:
+  - key: "platform"
+    operator: "Equal"
+    value: "kafka"
+    effect: "NoSchedule"
+  containers:
+  - image: bitnami/kafka:3.1.0
+    name: kafka-client
+    env:
+    - name: ALLOW_PLAINTEXT_LISTENER
+      value: "yes"
+  dnsPolicy: ClusterFirst
